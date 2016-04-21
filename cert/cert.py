@@ -1,9 +1,6 @@
-import os
 
 
 def format_file(old, new):
-
-    print 'current working directory is ' + os.getcwd()
 
     original = open(old, 'r')
     formatted = open(new, 'w')

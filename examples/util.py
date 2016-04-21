@@ -1,3 +1,14 @@
+import os
+
+
+def os_options():
+    print 'os.getcwd() = ' + os.getcwd()
+    print 'os.name = ' + os.name
+    print 'os.curdir = ' + os.curdir
+    print 'os.environ = ' + str(os.environ)
+    print 'os.getlogin() = ' + os.getlogin()
+
+
 def null_safe_get():
     event = ({
             "Name": "name",
@@ -17,7 +28,7 @@ def null_safe_get():
 
 
 def main():
-    null_safe_get()
+    os_options()
 
 if __name__ == '__main__':
     main()
